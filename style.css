@@ -1,5 +1,5 @@
 header {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgb(21 8 32);
     display: flex;
     justify-content: space-between;
     left: 0;
@@ -29,17 +29,17 @@ header .links a img {
 }
 
 html {
-    background-color: blue;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(59 22 91);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar-container {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     height: 60px;
     top: 40px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgb(38 14 59);
 }
 
 .navbar {
@@ -51,12 +51,40 @@ html {
     align-items: center;
 }
 
-.navbar a {
+.navbar button {
     text-decoration: none;
     color: white;
     transition: 0.25s;
+    transform: skew(-10deg, 0deg);
+    border: none;
+    line-height: 8px;
+    background: none;
 }
 
-.navbar a:hover {
-    transform: scale(1.1);
+.navbar button:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.navbar .selected {
+    background-color: rgb(59 22 91);
+    margin-top: -10%;
+    margin-bottom: -10%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 3%;
+    padding-right: 3%;
+    transform: skew(-10deg, 0deg);
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.content {
+    color: white;
 }
