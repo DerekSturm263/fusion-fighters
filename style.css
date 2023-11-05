@@ -11,7 +11,7 @@ header {
     align-items: flex-start;
 }
 
-header h2 {
+header h3 {
     float: left;
     color: white;
     margin: 0;
@@ -57,21 +57,22 @@ html {
     transition: 0.25s;
     transform: skew(-10deg, 0deg);
     border: none;
-    line-height: 8px;
+    line-height: 60px;
     background: none;
+    font-size: 16px;
+    height: 60px;
+    margin-top: -25px;
 }
 
 .navbar button:hover {
-    color: grey;
+    background-color: rgb(59 22 91);
+    padding-left: 3%;
+    padding-right: 3%;
     cursor: pointer;
 }
 
 .navbar .selected {
     background-color: rgb(59 22 91);
-    margin-top: -10%;
-    margin-bottom: -10%;
-    height: 60px;
-    line-height: 60px;
     padding-left: 3%;
     padding-right: 3%;
     transform: skew(-10deg, 0deg);
@@ -87,4 +88,6 @@ html {
 
 .content {
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
